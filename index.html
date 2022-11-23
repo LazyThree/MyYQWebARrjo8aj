@@ -171,8 +171,7 @@
                                               gltf-model="#animated-asset"
                     scale="0.08055977605357927 0.08055977605357927 0.08055977605357927"
                     animation-mixer="loop: repeat"
-
-                    gps-entity-place="latitude: 30.268075332221297; longitude: 120.12065302580596;"
+                    gps-projected-entity-place="latitude: 30.268075332221297; longitude: 120.12065302580596;"
                 ></a-entity>
                 <a-entity
                     look-at="[gps-camera]"
@@ -180,18 +179,23 @@
                     scale="0.08055977605357927 0.08055977605357927 0.08055977605357927"
                     animation-mixer="loop: repeat"
 
-                    gps-entity-place="latitude: 30.2650767298318; longitude: 120.1211465522647;"
+                    gps-projected-entity-place="latitude: 30.2650767298318; longitude: 120.1211465522647;"
                 ></a-entity>
                  <a-entity
                 look-at="[gps-camera]"
                 geometry="primitive: cylinder;height=10;radius=1.5"
                 animation-mixer="loop: repeat"
                 scale="0.08055977605357927 0.08055977605357927 0.08055977605357927"
-                gps-entity-place="latitude: 30.2650767298318; longitude: 120.1211465522647;"
+                gps-projected-entity-place="latitude: 30.2650767298318; longitude: 120.1211465522647;"
             >
         
         </a-entity>
-            <a-camera gps-projected-camera rotation-reader></a-camera>
+            <a-camera 
+                      gps-projected-camera 
+                      rotation-reader
+                      simulateLatitude="30.265320"
+                      simulateLongitude="120.120650"
+                      ></a-camera>
         </a-scene>
     </body>
 </html>
