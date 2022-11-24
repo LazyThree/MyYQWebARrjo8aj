@@ -11,7 +11,7 @@
     AFRAME.registerComponent("tunnel", {
             init: function () {
                 const firstObj = document.getElementById("first");
-                const secondObj = document.getElementById("second")
+                const secondObj = document.getElementById("third")
                 const firstPos = new THREE.Vector3();
                 const secondPos = new THREE.Vector3();
                 const el = this.el
@@ -202,7 +202,6 @@
                     gltf-model="#animated-asset"
                     scale="0.08055977605357927 0.08055977605357927 0.08055977605357927"
                     animation-mixer="loop: repeat"
-
                     gps-entity-place="latitude: 30.265289859720493; longitude: 120.12086223810913;"
                 ></a-entity>
                 <a-entity
@@ -218,7 +217,7 @@
                     gltf-model="#animated-asset"
                     scale="0.08055977605357927 0.08055977605357927 0.08055977605357927"
                     animation-mixer="loop: repeat"
- 
+
                     gps-entity-place="latitude: 30.265958899206822; longitude: 120.12116800993682;"
                 ></a-entity>
                 <a-entity
@@ -290,23 +289,7 @@
                     animation-mixer="loop: repeat"
                     gps-entity-place="latitude: 30.2650767298318; longitude: 120.1211465522647;"
                 ></a-entity>
-                 <a-entity
-                look-at="[gps-camera]"
-                geometry="primitive: cylinder;height=10;radius=1.5"
-                animation-mixer="loop: repeat"
-                gps-entity-place="latitude: 30.2650767298318; longitude: 120.1211465522647;"
-            >
-        </a-entity>
-        <a-entity
-                look-at="[gps-camera]"
-                geometry="primitive: cylinder;color:red"
-                animation-mixer="loop: repeat"
-                gps-entity-place="latitude: 30.2650767298310; longitude: 120.1211465522642;"
-                position="0 10 0"
-            >
-        </a-entity>
-        <a-cylinder material="color:green" gps-entity-place="latitude: 30.2650767298310; longitude: 120.1211465522642" position="0 30 0">
-        </a-cylinder>
+
             <a-camera 
                       gps-camera 
                       rotation-reader
